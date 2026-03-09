@@ -1,8 +1,7 @@
-resource "aws_iam_user" "demo_user" {
-  name = "demo-user"
-
-  tags = {
-    Name = "demo-user"
-    Environment = "dev"
-  }
+resource "aws_s3_bucket" "demo_s3_web"{
+	bucket = "webhosting-5245345346"
+	tags = {
+    		name = "demo-s3-web"
+    		created_from = "terraform"
+  	}
 }
